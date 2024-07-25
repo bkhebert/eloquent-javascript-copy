@@ -26,8 +26,17 @@ LOGS =>
 
 */
 
-function triangles() {
-  
+function triangles(number) {
+  /**
+   * I: a number
+   * O: a triangle like thingamobobber
+   * C: 
+   * E: minimize the bullshit
+   */
+  var hashtags = '#'
+  for( i = 0; i < number; i++){
+    console.log("#".repeat(i + 1));
+  }
 }
 
 
@@ -48,7 +57,14 @@ on the number:
 */
 
 function fizzBuzz(start, end) {
-  
+  /**
+   * I: two numbers
+   * O: a string
+   * C: depending on the value of the number will determine what string is printed
+   * E:
+   */
+  //loop through all the numbers
+  for(i = start; i < end;)
 }
 
 ////////////////////////////////////////////////////////////////////////////////
