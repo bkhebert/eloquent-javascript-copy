@@ -28,16 +28,37 @@ function isEven(num) {
 // countChars //////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function countChars() {
-
+//set up parameters for a string and a char
+function countChars(string, char) {
+  //initialize a count variable to 0
+  let count = 0;
+  //loop throught the string
+  for(let i = 0; i < string.length; i++){
+    //if the character occurs in uppercase or lowercase
+    if(char.toUpperCase() === string[i] || char.toLowerCase() === string[i]){
+      //add 1 to the count
+      count++
+    }
+  }
+//return the count
+return count;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 // countBs /////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function countBs() {
-
+function countBs(string) {
+  //initialize a count variable to zero
+  let bCount = 0;
+  //loop through the string
+  for(let i = 0; i < string.length; i++){
+    //if there is an uppercase b at the index, add 1 to the bCount variable
+    if(string[i] === "B"){
+      bCount++
+    }
+  }//return the bCount variable
+  return bCount
 }
 
 ////////////////////////////////////////////////////////////////////////////////
